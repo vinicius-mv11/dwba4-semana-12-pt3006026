@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eventos - IFSP - Pirituba</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/formularios.css" rel="stylesheet" type="text/css" />
+  <link href="./js/disabling.js" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+</head>
+
+<body>
+
+  <header id="cabecalho">
+    <nav>
+      <object width="100%" height="185px" data="header.html"></object>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Inscreva-se</h1>
+
+    <form method="post">
+
+      <fieldset>
+        <label for="evento">Evento</label>
+        <select name="assunto" id="assunto">
+          <option value="">-- Selectione --</option>
+          <option value="voe-sem-asas">Voe sem asas</option>
+          <option value="festa-junina">Festa junina</option>
+          <option value="semana-tecnologia">Semana de tecnologia</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações de Acesso</legend><br>
+
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="confirme-senha">Confirme a Senha</label>
+        <input type="password" id="confirme-senha" name="confirme-senha" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Pessoais</legend><br>
+
+        <label for="nome-completo">Nome Completo</label>
+        <input type="text" id="nome-completo" name="nome-completo" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="celular">Celular (99) 9999-9999</label>
+        <input type="tel" id="celular" name="celular" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"><br>
+
+        <fieldset>
+          <legend>Sexo</legend>
+            <label for="sexo-masculio">Masculino<input type="radio" id="sexo-masculino" name="radio-sexo" value="M">
+          </label>
+
+            <label for="sexo-feminino">Feminino<input type="radio" id="sexo-feminino" name="radio-sexo" value="">
+          </label>
+
+          </input>
+        </fieldset>
+
+        <br>
+        <label for="data-nascimento">Data de Nascimento</label>
+        <input type="date" id="data-nascimento" name="data-nascimento"><br><br>
+
+        <label for="cor-favorita">Cor Favorita</label>
+        <input type="color" id="cor-favorita" name="cor-favorita"><br><br>
+
+        <label for="perfil-github">Perfil no Github</label>
+        <input type="url" id="perfil-github" name="perfil-github"><br><br>
+
+      </fieldset>
+
+      <br>
+      <button type="submit">Inscrever</button>
+      <button type="reset">Limpar</button>
+      <br><br><br><br>
+
+    </form>
+  </main>
+
+  <footer id="rodape">
+    <object width="100%" height="150px" data="footer.html"></object>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

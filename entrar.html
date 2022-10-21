@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Entrar - IFSP - Pirituba</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/formularios.css" rel="stylesheet" type="text/css" />
+  <link href="./js/disabling.js" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+
+  <!-- Meta tags Obrigatorias -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <header id="cabecalho">
+    <nav>
+      <object width="100%" height="185px" data="header.html"></object>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Imagem -->
+    <form class="form-login center">
+      
+      <div class="form-outline mb-4">
+        <img class="center w-25" src="./imagens/ifsp.png">
+        <h1 class="text-center">Faça login</h1>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-0">
+        <input id="entrar-usuario" class="form-control" type="text" name="entrar-usuario" required
+          placeholder="Seu email" />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-0">
+        <input id="entrar-senha" type="password" class="form-control" name="entrar-senha" placeholder="Sua senha"
+          required>
+      </div>
+
+      <!-- 2 column grid layout for inline styling -->
+      <div class="mt-2 text-center">
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check-lembrar-de-mim" checked />
+            <label class="form-check-label" for="check-lembrar-de-mim"> Lembrar de mim</label>
+          </div>
+      </div>
+
+        <div class="text-center mt-2">
+          <!-- Simple link -->
+          <a href="#!">Esqueci a senha</a>
+        </div>
+
+      <!-- Submit button -->
+      <button type="button" class="btn btn-primary btn-block mb-4 w-10 mt-2 p-2">Login</button>
+
+      <p class="text-muted">
+        © 2020
+      </p>
+  </main>
+
+  <footer id="rodape">
+    <object width="100%" height="150px" data="footer.html"></object>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
